@@ -10,26 +10,41 @@ export default new Router({
     {
       path: '/',
       component: Layout,
-      redirect: 'home',
-      children: [
-        {
-          path: 'home',
-          name: 'Home',
-          component: () => import('@/views/home/Home')
+      redirect: '/home',
+      children: [{
+        path: '/home',
+        name: 'home',
+        component: () => import('@/views/home/Index')
+      }, {
+        path: '/ecology',
+        name: 'ecology',
+        component: () => import('@/views/ecology/Index')
+      }, {
+        path: '/lib',
+        name: 'lib',
+        component: () => import('@/views/lib/Index')
+      }, {
+        path: '/work',
+        name: 'work',
+        component: () => import('@/views/work/Index'),
+        children: [{
+          path: '/work/project',
+          name: 'project',
+          component: () => import('@/views/work/project/Index')
         }, {
-          path: 'ecology',
-          name: 'Ecology',
-          component: () => import('@/views/ecology/Ecology')
+          path: '/work/task',
+          name: 'task',
+          component: () => import('@/views/work/task/Index')
         }, {
-          path: 'lib',
-          name: 'Lib',
-          component: () => import('@/views/lib/Lib')
+          path: '/work/apply',
+          name: 'apply',
+          component: () => import('@/views/work/apply/Index')
         }, {
-          path: 'work',
-          name: 'Work',
-          component: () => import('@/views/work/WorkBench')
-        }
-      ]
+          path: '/work/approval',
+          name: 'approval',
+          component: () => import('@/views/work/approval/Index')
+        }]
+      }]
     }
   ]
 })

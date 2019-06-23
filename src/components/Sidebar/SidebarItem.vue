@@ -1,3 +1,4 @@
+
 <template>
   <div class="aside-wrapper">
     <el-row>
@@ -10,7 +11,7 @@
 
 <script>
 export default {
-  name: 'Aside',
+  name: 'SidebarItem',
   data () {
     return {
       msg: ''

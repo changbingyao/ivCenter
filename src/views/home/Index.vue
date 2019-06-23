@@ -1,12 +1,12 @@
 <template>
-  <div class="hello">
-    Ecology
+  <div class="home-wrapper">
+    Home.....
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Ecology',
+  name: 'Index',
   data () {
     return {
       msg: ''
@@ -15,7 +15,9 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.home-wrapper {
+  margin-top: 60px;
+  padding: 0 2%;
+}
 </style>

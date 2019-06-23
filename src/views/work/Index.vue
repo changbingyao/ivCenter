@@ -1,12 +1,16 @@
 <template>
-  <div class="navbar-wrapper">
-    AppMain
+  <div>
+    <iv-sidebar></iv-sidebar>
   </div>
 </template>
 
 <script>
+import IvSidebar from '@/components/Sidebar/Index'
 export default {
-  name: 'AppMain',
+  name: 'Index',
+  components: {
+    IvSidebar
+  },
   data () {
     return {
       msg: ''
@@ -15,7 +19,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 </style>
