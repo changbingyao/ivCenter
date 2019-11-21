@@ -16,8 +16,8 @@
         <el-menu-item index="1">
           <router-link tag="a" :to="{ name: 'home'}">首页</router-link>
         </el-menu-item>
-        <el-menu-item index="2" disabled>
-          <router-link tag="a" :to="{ name: 'home'}">生态</router-link>
+        <el-menu-item index="2">
+          <router-link tag="a" :to="{ name: 'ecology'}">生态</router-link>
         </el-menu-item>
         <el-menu-item index="3" disabled>
           <router-link tag="a" :to="{ name: 'home'}">知识库</router-link>

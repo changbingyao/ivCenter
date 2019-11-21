@@ -7,8 +7,11 @@ import store from './store'
 import i18n from './locale'
 import '../static/css/reset.css'
 import '../static/css/index.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 
 Vue.use(ElementUI)
+Vue.use(VueAwesomeSwiper)
 
 Vue.config.productionTip = false
 

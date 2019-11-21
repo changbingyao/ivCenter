@@ -1,6 +1,6 @@
 <template>
   <div class="footer-wrapper">
-    <a href="#">华为有限公司@2019</a>
+    <a href="#">XX有限公司@2019</a>
   </div>
 </template>
 
