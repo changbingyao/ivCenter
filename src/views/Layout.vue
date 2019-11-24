@@ -2,7 +2,7 @@
   <div>
     <el-container>
       <iv-header></iv-header>
-      <div>
+      <div class="layout-content-wrapper">
         <router-view></router-view>
       </div>
       <iv-footer></iv-footer>
@@ -27,7 +27,8 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.layout-content-wrapper {
+  width: 100%;
+}
 </style>

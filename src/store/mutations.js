@@ -4,5 +4,8 @@ export default {
     try {
       localStorage.city = city
     } catch (e) {}
+  },
+  SET_ACTIVE_INDEX (state, val) {
+    state.activeIndex = val
   }
 }

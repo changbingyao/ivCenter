@@ -19,8 +19,8 @@
         <el-menu-item index="2">
           <router-link tag="a" :to="{ name: 'ecology'}">生态</router-link>
         </el-menu-item>
-        <el-menu-item index="3" disabled>
-          <router-link tag="a" :to="{ name: 'home'}">知识库</router-link>
+        <el-menu-item index="3">
+          <router-link tag="a" :to="{ name: 'lib'}">知识库</router-link>
         </el-menu-item>
         <el-menu-item index="4">
           <router-link tag="a" :to="{ name: 'project'}">我的工作台</router-link>
@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     handleSelect (key, keyPath) {
-      console.log(key, keyPath)
+      this.$router.push({path: '/lib'})
     }
   }
 }
