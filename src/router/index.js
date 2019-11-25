@@ -18,7 +18,7 @@ export default new Router({
       }, {
         path: '/ecology',
         name: 'ecology',
-        component: () => import('@/views/ecology/Index')
+        component: () => import('@/views/ecology/Index3')
       }, {
         path: '/lib',
         name: 'lib',
